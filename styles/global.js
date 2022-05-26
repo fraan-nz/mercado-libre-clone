@@ -4,7 +4,7 @@ export default createGlobalStyle`
 
   @font-face {
   font-family: 'Proxima Nova';
-  src: url('./fonts/ProximaNova.otf');
+  src: url('/fonts/ProximaNova.otf');
   font-style: normal;
   }
 
@@ -19,8 +19,9 @@ export default createGlobalStyle`
     font-size: 16px;
   }
   body {
-    color: ${(props) => props.theme.text.green};
+    color: ${(props) => props.theme.text.grey};
     background: ${(props) => props.theme.bg.grey};
+
     
     & > div {
       display: flex;

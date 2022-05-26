@@ -6,7 +6,9 @@ export const StyledNavbar = styled.nav`
 	display: flex;
 	justify-content: center;
 	background: ${({ theme }) => theme.bg.yellow};
-	padding: 8px;
+	padding-top: 8px;
+	padding-inline: 8px;
+	position: relative;
 `;
 
 export const StyledWrapper = styled.div`
@@ -15,14 +17,19 @@ export const StyledWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	padding-inline: 10px;
 
 	.navbar__row--top {
 		width: 100%;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
+
+		.navbar__logo {
+			margin-top: 3px;
+		}
 
 		form {
-			width: 600px;
+			width: 598px;
 			display: flex;
 			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 			margin-right: auto;
@@ -78,6 +85,7 @@ export const StyledWrapper = styled.div`
 			display: flex;
 			gap: 2px;
 			width: 185px;
+			padding-bottom: 8px;
 
 			.location__text {
 				display: flex;
@@ -88,7 +96,7 @@ export const StyledWrapper = styled.div`
 
 				& > p:first-child {
 					font-size: 0.75rem;
-					color: ${({ theme }) => theme.text.lightGrey};
+					color: ${({ theme }) => theme.text.grey};
 				}
 
 				& > p:last-child {

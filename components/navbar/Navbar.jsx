@@ -1,9 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { StyledNavbar, StyledWrapper } from "./StyledNavbar";
 import logo from "../../public/ml-logo.png";
 import lupa from "../../public/lupa.png";
-import navTop from "../../public/nav-top.webp";
+import subscribe from "../../public/subscribe.png";
 import pin from "../../public/pin.png";
 import Icon from "./icon/Icon";
 import Categories from "./categories/Categories";
@@ -14,7 +15,11 @@ function Navbar() {
 		<StyledNavbar>
 			<StyledWrapper>
 				<div className="navbar__row--top">
-					<Image src={logo} alt="Mercado Libre Logo" layout="fixed" />
+					<Link href="/">
+						<a className="navbar__logo">
+							<Image src={logo} alt="Mercado Libre Logo" layout="fixed" />
+						</a>
+					</Link>
 
 					<form>
 						<input
@@ -27,7 +32,7 @@ function Navbar() {
 					</form>
 
 					<Image
-						src={navTop}
+						src={subscribe}
 						alt="Imagen promoción nivel 6"
 						height={39}
 						width={340}

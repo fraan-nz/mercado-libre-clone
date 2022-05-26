@@ -48,6 +48,11 @@ export const StyledForm = styled.form`
 				outline: 2px solid ${({ theme }) => theme.text.blue};
 			}
 		}
+
+		.error {
+			color: ${({ theme }) => theme.text.red};
+			font-size: 0.8rem;
+		}
 	}
 
 	.form__buttons {

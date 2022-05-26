@@ -3,6 +3,7 @@ const theme = {
 		yellow: "#FFF159",
 		white: "#FFFFFF",
 		grey: "#EBEBEB",
+		darkGrey: "#333333",
 		orange: "#FF7733",
 		red: "#F64C41",
 		blue: "#3483FA",
@@ -13,10 +14,11 @@ const theme = {
 		green: "#00A650",
 		grey: "#666666",
 		darkGrey: "rgba(0, 0, 0, 0.9)",
-		lightGrey: "rgba(0, 0, 0, 0.55)",
+		lightGrey: "#EBEBEB",
 		blue: "#3483FA",
 		darkBlue: "#1359C3",
 		white: "#FFFFFF",
+		red: "#F64C41",
 	},
 };
 
